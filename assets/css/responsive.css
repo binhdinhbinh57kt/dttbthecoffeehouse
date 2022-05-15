@@ -1,0 +1,30 @@
+/* Moblie & tablet */
+@media (max-width: 1023px) { 
+    .hide-on-moblie-tablet {
+        display: none;
+    }
+
+    /* Header */
+    
+
+    
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    } 
+    
+    
+
+/* Moblie */
+@media (max-width: 739px) {
+    .hide-on-moblie {
+        display: none;
+    }
+    
+    
+}
+
+/* Animation */

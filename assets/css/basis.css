@@ -1,0 +1,90 @@
+/* Khai bao bien */
+:root {
+    --primary-color:#e57905;
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color:#333;
+  
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    /* 100% được kiểu 16px 1rem = 16px */
+    /* HACK: font-size: 62.5% */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* sans-serif: chữ ko có chân */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+       
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+       
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes top {
+    from {
+        top:-10;
+    }
+    to {
+        top:0;
+    }
+}
+
+@keyframes example {
+    from {
+        color: black;
+        
+        
+    }
+    to {
+        color: #EA8025;
+        
+    }
+}
+  
+
+@keyframes slide {
+    0% {
+      left: 100%;
+      opacity: 0;
+    }
+    100% {
+      left: 0%;
+      opacity: 1;
+    }
+  }
