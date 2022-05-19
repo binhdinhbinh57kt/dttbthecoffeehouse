@@ -54,27 +54,31 @@
 }
 
 .nav {
-    /* position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 10; */
     height: 60px;
     background-color: rgba(255, 255, 255, 0.8); 
-    
 }
 
 .nav-des {
     height: 60px;
     display: flex;
     align-items: center;
-    
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .nav-heading {
     font-size: 2rem;
     font-weight: 600;
-    margin-right: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    
 }
+
+.nav-heading-bar {
+    display: none;
+}
+
 
 .nav-list {
     display: flex;
@@ -107,12 +111,10 @@
 .menu-list {
     position: absolute;
     left: -450px;
-    display: none;  
-    margin-top: 40px;
+    display: none;
+    margin-top: 20px;
     background-color: #fff;
 }
-
-
 
 .nav-menu {
     position: relative;
@@ -174,8 +176,7 @@
 }
 
 .house-menu {
-    position: relative;
-    
+    position: relative;   
 }
 
 .house-menu::after {
@@ -191,19 +192,16 @@
 .house-list {
     position: absolute;
     left: -530px;
-    margin-top: 40px;
     display: none;
-    
-    background-color: #fff
+    margin-top: 20px;
+    background-color: #fff;
 }
 
 .house-menu:hover .house-list{
     display: block;
     color: black;
     animation: fadeIn ease-In 0.5s;
-    z-index: 9;
-    
-   
+    z-index: 9;  
 }
 
 .house-list--des {
@@ -296,7 +294,7 @@
 
 .content-text {
     padding-top: 90px;
-    background-color: #ffe9d4;
+    background-color: var(--background-color);
     text-align: center;
 }
 
@@ -308,7 +306,7 @@
 .content-text-des {
     display: flex;
     justify-content: center;
-    background-color: #ffe9d4;
+    background-color: var(--background-color);
 
 }
 
@@ -323,7 +321,7 @@
 .content-text-tag {
     display: flex;
     justify-content: center;
-    background-color: #ffe9d4;
+    background-color: var(--background-color);
     padding-top: 12px;
 }
 
@@ -334,9 +332,11 @@
     color: rgba(0, 0, 0, 0.85);
 }
 
+/* Product-outstanding */
 
 .product-outstanding {
-    background-color:#ffe9d4;
+    background-color: var(--background-color);
+    padding-bottom: 64px;
 }
 
 .product-outstanding-list {
@@ -380,7 +380,7 @@
 } 
 
 .product-outstanding-learn {
-    background-color:#EA8025; 
+    background-color:var( --primary-color);
     margin-left: 16px;
     margin-right: 16px;
     font-size: 16px;
@@ -393,7 +393,7 @@
 }
 
 .product-outstanding-learn:hover {
-    color: #EA8025;
+    color: var( --primary-color);
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     animation: example ease-in 0.2s; 
@@ -404,8 +404,100 @@
     height: 24px;
 }
 
+/* Shop */
+.shop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.shop-content {
+    padding-top: 100px;
+}
+
+.shop-name {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+    text-decoration: solid;
+}
+
+.shop-des {
+    opacity: 0.9;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+}
+
+.shop-learn {
+    background-color: var( --primary-color);
+    font-size: 16px;
+    padding: 12px 25px;
+    text-align: center;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border: 2px solid;
+    width: 70%;
+    margin-top: 24px;
+}
+
+.shop-learn:hover {
+    color: var( --primary-color);
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    animation: example ease-in 0.2s; 
+    
+}
+
+.shop-move {
+    padding-top: 14px;
+    padding-left: 4px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.shop-move-des {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(85, 82, 82);
+    margin-right: 18px;
+    color: rgb(85, 82, 82);
+}
+
+.shop-move-def {
+    border: 2px solid rgb(196, 189, 189);
+    color: rgb(196, 189, 189);
+}
+
+
+.shop-img {
+    top: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+}
+
+.shop-img-content {
+    top: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    border-radius: 6px;
+}
 
 /* HOUSE */
+.house {
+    background-color: #fff7e6;
+    padding-top: 5px;
+}
 
 .house-heading {
     display: flex;
@@ -422,10 +514,14 @@
 }
 
 /*  HOUSE - ITEM */
+.house-item {
+    background-color: #fff7e6;
+}
 
 .house-item-heading {
     display: flex;
     align-items: center;
+    color: var(--text-color);
    
 }
 
@@ -436,6 +532,7 @@
     margin: 24px 0;
     border-left: 4px solid rgb(229, 121, 5);
     line-height: 1.4;
+    color: var(--text-color);
 }
 
 .house-item-heading--des:hover {
@@ -443,103 +540,58 @@
     cursor: pointer;
 }
 
-.house-item-img-house-1 {
-    background-color: #EA8025;
+.house-item-img-house {
+    background-color: var( --primary-color);
     height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/thecoffehouse_ca_phe_01_b4adbd88db6e4ca3b7c2c5934d1a1ed9_grande.jpg);
+    border-radius: 10px;  
     background-size: cover;
     background-position: center center;
     overflow: hidden;
 }
 
-.house-item-img-house-1:hover,
-.house-item-img-house-2:hover,
-.house-item-img-house-3:hover,
-.house-item-img-house-4:hover,
-.house-item-img-house-5:hover,
-.house-item-img-house-6:hover,
-.house-item-img-house-7:hover,
-.house-item-img-house-8:hover,
-.house-item-img-house-9:hover {
+.coffeeholic-product-1 {
+    background-image: url(https://file.hstatic.net/1000075078/article/thecoffehouse_ca_phe_01_b4adbd88db6e4ca3b7c2c5934d1a1ed9_grande.jpg);
+}
+
+.coffeeholic-product-2 {
+    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_caphe_7_db8def55acbf426ea725921529f6f01e_grande.jpg);
+}
+
+.coffeeholic-product-3 {
+    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_caphe_2_aacf152c62064c40ab804a66ffc706d1_grande.jpg);
+}
+
+.teaholic-product-1 {
+    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_nguongochibiscus_1_471853bf128e4a178b1e00a910bf66b1_grande.jpg);
+}
+
+.teaholic-product-2 {
+    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_trahoa_5_21ddd441fcc445feba99194c816e2ebc_grande.jpg);
+}
+
+.teaholic-product-3 {
+    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_nuoc_pha_tra_07_4aff69297bfa4bbab42f18b27c2c11f0_grande.jpg);
+}
+
+.blog-product-1 {
+    background-image: url(https://file.hstatic.net/1000075078/article/123232891_2820303564910318_4578047210373311456_n_699bea2973ec4087886ab888d5434de4_grande.jpg);
+}
+
+.blog-product-2 {
+    background-image: url(https://file.hstatic.net/1000075078/article/hn-le-thanh-nghi2_d161f1f7755249cba30f2ecc7a591e47_master_1bbacee733084b93a400eaa54762bf12_grande.jpg);
+}
+
+.blog-product-3 {
+    background-image: url(https://file.hstatic.net/1000075078/article/tch206857_stacking_d4325b7f7a5945d7b2abee4eb7ad51d5_grande.jpg);
+}
+
+/* .house-item-img-house:hover {
     transform: scale(1.05);
     transition: all 0.6s;
     width: 100%;
     overflow: hidden;
     cursor: pointer;
-}
-
-.house-item-img-house-2 {
-    background-color: #EA8025;
-    height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_caphe_7_db8def55acbf426ea725921529f6f01e_grande.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.house-item-img-house-3 {
-    background-color: #EA8025;
-    height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_caphe_2_aacf152c62064c40ab804a66ffc706d1_grande.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.house-item-img-house-4 {
-    background-color: #EA8025;
-    height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_nguongochibiscus_1_471853bf128e4a178b1e00a910bf66b1_grande.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.house-item-img-house-5 {
-    background-color: #EA8025;
-    height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_trahoa_5_21ddd441fcc445feba99194c816e2ebc_grande.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.house-item-img-house-6 {
-    background-color: #EA8025;
-    height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/thecoffeehouse_nuoc_pha_tra_07_4aff69297bfa4bbab42f18b27c2c11f0_grande.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.house-item-img-house-7 {
-    background-color: #EA8025;
-    height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/123232891_2820303564910318_4578047210373311456_n_699bea2973ec4087886ab888d5434de4_grande.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.house-item-img-house-8 {
-    background-color: #EA8025;
-    height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/hn-le-thanh-nghi2_d161f1f7755249cba30f2ecc7a591e47_master_1bbacee733084b93a400eaa54762bf12_grande.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
-.house-item-img-house-9 {
-    background-color: #EA8025;
-    height: 172px;
-    border-radius: 10px;
-    background-image: url(https://file.hstatic.net/1000075078/article/tch206857_stacking_d4325b7f7a5945d7b2abee4eb7ad51d5_grande.jpg);
-    background-size: cover;
-    background-position: center center;
-}
+} */
 
 .house-item-list-des {
     padding-top: 15px;
@@ -563,24 +615,25 @@
     -webkit-line-clamp: 1;
     font-weight: 600;
     text-transform:uppercase;
+    color: var(--text-color);
 }
 
 .house-item-use:hover {
     animation: example ease-in 0.2s;
     cursor: pointer;
-    color: #EA8025;
-    
+    color: var( --primary-color); 
 }
 
 .house-item-describe {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 24px;
     padding-top: 8px;
 }
 
 .house-item-last {
-    padding-bottom: 140px;
+    padding-bottom: 300px;
+    background-color: #fff7e6;
     
 }
 
@@ -593,13 +646,13 @@
 }
 
 .footer-heading {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 16px;
 }
 
 .footer-item {
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     cursor: pointer;
 }   
@@ -616,26 +669,103 @@
 }
 
 .footer-contact-call {
-    font-size: 15px;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
 .footer-address {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 20px;
     padding-top: 10px;
 }
 
-.footer-fb {
+
+.footer-social {
+    height: 120px;
+    background-image: url(https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/244233002_3084835728457099_3690024797069741676_n.jpg?_nc_cat=105&ccb=1-6&_nc_sid=e3f864&_nc_ohc=KCEEuMFFIzsAX8r-e02&_nc_ht=scontent.fhan4-1.fna&oh=00_AT8pOOI3QZSSGbkOke7Tl13jkY1fXmS1iALBKUxJq-pq3w&oe=6285A2E5);
+    background-size: cover;
+    background-position: center center; 
+    width: 270px;
+    opacity: 0.6;
+    position: absolute;
+}
+
+.footer-social-fb {
     display: flex;
+    padding-top: -50px;
     position: relative;
-    
 }
 
 .footer-logo-cafe {
-    border: 2px solid #fff;
+    border: 2px solid var(--white-color);
+    z-index: 1000;
+    margin-left: 18px;
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.footer-social-fb-des {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-fb-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-top: 8px;
+}
+
+.footer-fb-name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-fb-name-check {
+    height: 20px;
+    width: 20px;
+    color: #0674e7;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+}
+
+.footer-fb-follow {
+    font-size: 1.2rem;
+    padding-top: 4px;
+    z-index: 10;
+}
+
+.footer-fell {
+    margin-left: 18px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-right:  20px;
+}
+
+.footer-fell-like {
+    background-color: #fff;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+
+
+/* .footer-fb {
+    display: flex;
+    position: relative; 
+}
+
+.footer-logo-cafe {
+    border: 2px solid var(--white-color);
     z-index: 10;
     margin-left: 18px;
     margin-top: 8px;
@@ -651,13 +781,10 @@
     flex-direction: column;
     z-index: 100;
     margin-top: 8px;
-
 }
 
 .footer-fb-name {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 20px; 
+   
 }
 
 .footer-fb-name:hover {
@@ -670,11 +797,10 @@
     background-color: white;
     border-radius: 50%;
     border: 0.5px solid white;
-    
 }
 
 .footer-fb-follow {
-    font-size: 12px;
+    font-size: 1.2rem;
     padding-top: 4px;
     z-index: 10;
 }
@@ -685,8 +811,7 @@
     width: 294px;
     height: 120px;
     position: absolute;
-    opacity: 0.5;
-    
+    opacity: 0.5; 
 }
 
 .footer-feel {
@@ -726,9 +851,8 @@
     cursor: pointer;
 }
 
-
 .footer-social-icon {
     font-size: 22px;
     padding-right: 12px;
 }
-
+ */

@@ -18,7 +18,7 @@
     <div class="abc">
         <div class="header">
             <div class="grid wide">
-                <div class="header-list">
+                <div class="header-list row">
                     <div class="header-list-item header-address ">
                         <img src="./img/header/1.png" alt="" class="header-img">
                         <span class="header-text">154 Cửa hàng khắp cả nước</span>
@@ -35,11 +35,16 @@
             </div>
         </div>
 
-        <div class="nav hide-on-moblie ">
+        <div class="nav">
             <div class="grid wide">
-                <div class=" nav-des">
-                    <span class="nav-heading">THE COFFEE HOUSE</span>
-                    <ul class="nav-list">
+                <div id="nav-list-mobile" class="nav-des">
+                    <div class="nav-heading">
+                        <i id="mobile-btn" class="nav-heading-bar fa-solid fa-bars"></i>
+                        <span class="nav-heading-text">THE COFFEE HOUSE</span>
+                        
+                    </div>
+                    
+                    <ul  class="nav-list">
                         <li class="nav-list-item">Cà phê</li>
                         <li class="nav-list-item">Trà</li>
                         <li class="nav-list-item nav-menu">
@@ -51,7 +56,7 @@
                                         <div class="menu-list-heading">Tất cả</div>
                                     </div>
 
-                                    <div class="menu-list-item c-7-1">
+                                    <div class="menu-list-item">
                                         <div class="menu-list-heading">Hi-Tea Healthy</div>
                                         <ul class="menu-list-selection">
                                             <li class="menu-list-selection-item">Hi-Tea Trà</li>
@@ -144,134 +149,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="header">
-        <div class="grid wide">
-            <div class="header-list">
-                <div class="header-list-item header-address ">
-                    <img src="./img/header/1.png" alt="" class="header-img">
-                    <span class="header-text">154 Cửa hàng khắp cả nước</span>
-                </div>
-                <div class="header-list-item header-contact">
-                    <img src="./img/header/2.png" alt="" class="header-img header-img-contact">
-                    <span class="header-text">Đặt hàng: 1800.6936</span>
-                </div>
-                <div class="header-list-item header-ship">
-                    <img src="./img/header/3.png" alt="" class="header-img header-img-ship">
-                    <span class="header-text">Freeship từ 50.000 vnđ</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="nav hide-on-moblie ">
-        <div class="grid wide">
-            <div class=" nav-des">
-                <span class="nav-heading">THE COFFEE HOUSE</span>
-                <ul class="nav-list">
-                    <li class="nav-list-item">Cà phê</li>
-                    <li class="nav-list-item">Trà</li>
-                    <li class="nav-list-item nav-menu">
-                        Menu
-                        <i class="nav-list-item--icon fa-solid fa-caret-down"></i>
-                         <div class="menu-list ">
-                            <div class="menu-list--des">
-                                <div class="menu-list-item">
-                                    <div class="menu-list-heading">Tất cả</div>
-                                </div>
-
-                                <div class="menu-list-item c-7-1">
-                                    <div class="menu-list-heading">Hi-Tea Healthy</div>
-                                    <ul class="menu-list-selection">
-                                        <li class="menu-list-selection-item">Hi-Tea Trà</li>
-                                        <li class="menu-list-selection-item">Hi-Tea Đá Tuyết</li>
-                                    </ul>
-                                </div>
-                
-                                <div class="menu-list-item">
-                                    <div class="menu-list-heading">Cà phê</div>
-                                    <ul class="menu-list-selection">
-                                        <li class="menu-list-selection-item">Cà Phê Việt Nam</li>
-                                        <li class="menu-list-selection-item">Cà Phê Máy</li>
-                                        <li class="menu-list-selection-item">Cold Brew</li>
-                                    </ul>
-                                </div>
-                                <div class="menu-list-item">
-                                    <div class="menu-list-heading">Trà</div>
-                                    <ul class="menu-list-selection">
-                                        <li class="menu-list-selection-item">Trà trái cây</li>
-                                        <li class="menu-list-selection-item">Trà sữa Macchiato</li>
-                                    </ul>
-                                </div>
-                                <div class="menu-list-item">
-                                    <div class="menu-list-heading">Món khác</div>
-                                    <ul class="menu-list-selection">
-                                        <li class="menu-list-selection-item">Đá xay</li>
-                                        <li class="menu-list-selection-item">Matcha - Sô cô la</li>
-                                    </ul>
-                                </div>
-                                <div class="menu-list-item">
-                                    <div class="menu-list-heading">Bánh & Snack</div>
-                                    <ul class="menu-list-selection">
-                                        <li class="menu-list-selection-item">Bánh mặn   </li>
-                                        <li class="menu-list-selection-item">Bánh ngọt Snack</li>
-                                    </ul>
-                                </div>
-                                <div class="menu-list-item">
-                                    <div class="menu-list-heading">Tại nhà</div>
-                                    <ul class="menu-list-selection">
-                                        <li class="menu-list-selection-item">Cà phê tại nhà</li>
-                                        <li class="menu-list-selection-item">Trà tại nhà</li>
-                                        <li class="menu-list-selection-item">Bộ sưu tập quà tặng</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div> 
-                    </li>
-                    <li class="nav-list-item house-menu">
-                        Chuyện nhà
-                        <i class="nav-list-item--icon fa-solid fa-caret-down"></i>
-                        <div class="house-list ">
-                            <div class="house-list--des">
-
-                                <div class="hosse-list-item">
-                                    <div class="house-list-heading">Coffeeholic</div>
-                                    <ul class="house-list-selection">
-                                        <li class="house-list-selection-item">#chuyencaphe</li>
-                                        <li class="house-list-selection-item">#phacaphe</li>
-                                    </ul>
-                                </div>
-                
-                                <div class="hosse-list-item">
-                                    <div class="house-list-heading">Teaholic</div>
-                                    <ul class="house-list-selection">
-                                        <li class="house-list-selection-item">#phatra</li>
-                                        <li class="house-list-selection-item">#cauchuyenvetra</li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="hosse-list-item">
-                                    <div class="house-list-heading">Blog</div>
-                                    <ul class="house-list-selection">
-                                        <li class="house-list-selection-item">#inthemood</li>
-                                        <li class="house-list-selection-item">#Review</li>
-                                        <li class="house-list-selection-item">#HumanofTCH</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </li>
-                    <li class="nav-list-item">
-                        Cửa hàng
-                    </li>
-                    <li class="nav-list-item">Tuyển dụng</li>
-                </ul>
-            </div>
-        </div>
-    </div> -->
-
 
     <div class="content-img">
         <div class="grid">
@@ -393,7 +270,7 @@
     <div class="product-outstanding">
         <div class="grid wide">
             <div class="row-product ">
-                <div class="col c-4">
+                <div class="col l-4 m-12 c-12">
                     <div class="product-outstanding-list">
                         <img src="./img/back/9.png" alt="" class="product-outstanding-img">
                         <div class="product-outstanding-item">
@@ -406,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col c-4">
+                <div class="col l-4 m-12 c-12">
                     <div class="product-outstanding-list">
                         <img src="./img/back/10.png" alt="" class="product-outstanding-img">
                         <div class="product-outstanding-item">
@@ -418,7 +295,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col c-4">
+                <div class="col l-4 m-12 c-12">
                     <div class="product-outstanding-list">
                         <img src="./img/back/11.png" alt="" class="product-outstanding-img">
                         <div class="product-outstanding-item">
@@ -431,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col c-4">
+                <div class="col l-4 m-12 c-12">
                     <div class="product-outstanding-list">
                         <img src="./img/back/11.png" alt="" class="product-outstanding-img">
                         <div class="product-outstanding-item">
@@ -444,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col c-4">
+                <div class="col l-4 m-12 c-12">
                     <div class="product-outstanding-list">
                         <img src="./img/back/11.png" alt="" class="product-outstanding-img">
                         <div class="product-outstanding-item">
@@ -461,6 +338,35 @@
         </div>
     </div>
 
+    <div class="shop">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col c-4 ">
+                    <div class="shop-content">
+                        <div class="shop-name">The Coffee House - Vincom Mega Mall Smart City, Hà Nội</div>
+                        <div class="shop-des">Hà Nội chào Nhà mới tại đô thị Smart City, với không gian rộng rãi cùng những ô cửa kính cho nhiều ánh sáng và những góc chụp sống ảo vô cùng lung linh.</div>
+                        <div class="shop-learn ">Tìm hiểu thêm</div>
+                        <div class="shop-move">
+                            <div class="shop-move-des shop-move-def">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                            <div class="shop-move-des">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col c-8">
+                    <div class="shop-img">
+                        <img src="./img/back/shop.jpg" alt="" class="shop-img-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="house">
         <div class="grid wide">
             <div class="house-heading">
@@ -470,14 +376,15 @@
         </div>
     </div>
 
+    <!-- COFFEEHOLIC -->
     <div class="house-item">
         <div class="grid wide">
             <div class="house-item-heading">
                 <span class="house-item-heading--des">Coffeeholic</span>
             </div>
             <div class="row">
-                <div class="col c-4">
-                    <div class="house-item-img-house-1"></div>
+                <div class="col l-4 m-6 c-12">
+                    <div class="house-item-img-house coffeeholic-product-1"></div>
                     <div class="house-item-list-des">
                         <div class="house-item-day">11/03/2022</div>
                         <div class="house-item-use">Cách nhận biết hương vị cà phê Robusta nguyên chất dễ dàng nhất
@@ -488,8 +395,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col c-4">
-                    <div class="house-item-img-house-2"></div>
+                <div class="col l-4 m-6 c-12">
+                    <div class="house-item-img-house coffeeholic-product-2"></div>
                     <div class="house-item-list-des">
                         <div class="house-item-day">07/03/2022</div>
                         <div class="house-item-use">BẬT MÍ NHIỆT ĐỘ LÝ TƯỞNG ĐỂ PHA CÀ PHÊ NGON, ĐẬM ĐÀ HƯƠNG VỊ</div>
@@ -500,8 +407,8 @@
                     </div>
 
                 </div>
-                <div class="col c-4">
-                    <div class="house-item-img-house-3"></div>
+                <div class="col l-4  m-6 c-12">
+                    <div class="house-item-img-house coffeeholic-product-3"></div>
                     <div class="house-item-list-des">
                         <div class="house-item-day">04/03/2022</div>
                         <div class="house-item-use">CÁCH PHA CÀ PHÊ PHIN THƠM NGON TRÒN VỊ</div>
@@ -515,14 +422,15 @@
         </div>
     </div>
 
+    <!-- TEAHOLIC -->
     <div class="house-item">
         <div class="grid wide">
             <div class="house-item-heading">
                 <span class="house-item-heading--des">Teaholic</span>
             </div>
             <div class="row">
-                <div class="col c-4">
-                    <div class="house-item-img-house-4"></div>
+                <div class="col l-4 m-6 c-12">
+                    <div class="house-item-img-house teaholic-product-1"></div>
                     <div class="house-item-list-des">
                         <div class="house-item-day">15/04/2022</div>
                         <div class="house-item-use">TRÀ HOA HIBISCUS - TỪ LỤC ĐỊA ĐEN BƯỚC RA THẾ GIỚI</div>
@@ -532,8 +440,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col c-4">
-                    <div class="house-item-img-house-5"></div>
+                <div class="col l-4 m-6 c-12">
+                    <div class="house-item-img-house teaholic-product-2"></div>
                     <div class="house-item-list-des">
                         <div class="house-item-day">12/04/2022</div>
                         <div class="house-item-use">8 LOẠI TRÀ HOA ĐƯỢC LÒNG PHÁI ĐẸP</div>
@@ -544,9 +452,9 @@
                     </div>
 
                 </div>
-                <div class="col c-4">
-                    <div class="house-item-img-house-6"></div>
-                    <div class="house-item-list-des">
+                <div class="col l-4 m-6 c-12">
+                    <div class="house-item-img-house teaholic-product-3"></div>
+                    <div class="house-item-list-des row">
                         <div class="house-item-day">18/03/2022</div>
                         <div class="house-item-use">CHỌN NHIỆT ĐỘ NƯỚC ĐỂ PHA TRÀ ĐÚNG CHUẨN CHUYÊN GIA</div>
                         <div class="house-item-describe">
@@ -559,14 +467,15 @@
         </div>
     </div>
 
+    <!-- BLOG -->
     <div class="house-item-last">
         <div class="grid wide">
             <div class="house-item-heading">
                 <span class="house-item-heading--des">Blog</span>
             </div>
             <div class="row">
-                <div class="col c-4">
-                    <div class="house-item-img-house-7"></div>
+                <div class="col l-4 m-6 c-12">
+                    <div class="house-item-img-house blog-product-1"></div>
                     <div class="house-item-list-des">
                         <div class="house-item-day">14/02/2022</div>
                         <div class="house-item-use">LỄ TÌNH NHÂN, CÙNG CRUSH ĐI ĐÂU?</div>
@@ -576,8 +485,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col c-4">
-                    <div class="house-item-img-house-8"></div>
+                <div class="col l-4 m-6 c-12">
+                    <div class="house-item-img-house blog-product-2"></div>
                     <div class="house-item-list-des">
                         <div class="house-item-day">11/02/2022</div>
                         <div class="house-item-use">THE COFFEE HOUSE - QUÁN CÀ PHÊ LÝ TƯỞNG ĐỂ HỘI HỌP BẠN BÈ MÙA TẾT
@@ -589,8 +498,8 @@
                     </div>
 
                 </div>
-                <div class="col c-4">
-                    <div class="house-item-img-house-9"></div>
+                <div class="col l-4 m-6 c-12">
+                    <div class="house-item-img-house blog-product-3"></div>
                     <div class="house-item-list-des">
                         <div class="house-item-day">24/01/2022</div>
                         <div class="house-item-use">CHỌN NHIỆT ĐỘ NƯỚC ĐỂ PHA TRÀ ĐÚNG CHUẨN CHUYÊN GIA</div>
@@ -604,10 +513,11 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
     <div class="footer">
         <div class="grid wide">
-            <div class="row">
-                <div class="col c-3">
+            <div class="row-footer">
+                <div class="col l-3 m-6">
                     <div class="footer-heading">Giới thiệu</div>
                     <div class="footer-item">Về Chúng Tôi</div>
                     <div class="footer-item">Sản phẩm</div>
@@ -616,12 +526,12 @@
                     <div class="footer-item">Cửa Hàng</div>
                     <div class="footer-item">Tuyển dụng</div>
                 </div>
-                <div class="col c-3">
+                <div class="col l-3 m-6">
                     <div class="footer-heading">Điều khoản</div>
                     <div class="footer-item">Điều khoản sử dụng</div>
                     <div class="footer-item">Quy tắc bảo mật</div>
                 </div>
-                <div class="col c-3">
+                <div class="col l-3 m-12">
                     <div class="footer-contact">
                         <img src="./img/back/15.png" alt="" class="footer-contact-icon">
                         <span class="footer-contact-call">Đặt hàng: 1800 6936</span>
@@ -636,28 +546,49 @@
                         <span>Q.Bình Thạnh, TP.Hồ Chí Minh</span>
                     </div>
                 </div>
-                <div class="col c-3">
-                    <div class="footer-fb row">
-                        <img src="./img/back/1000.jpg" alt="" class="footer-fb-img">
-                        <img src="./img/back/13.jpg" alt="" class="footer-logo-cafe">
-                        <div class="footer-fb-des">
-                            <span class="footer-fb-name">
-                                The Coffee House
-                                <i class="footer-fb-name-check fa-solid fa-circle-check"></i>
-                            </span>
-                            <span class="footer-fb-follow">613.313 lượt thích</span>
-                        </div>
-
-                    </div>
+                <div class="col l-3 m-12">
                     <div class="footer-social">
-                        <i class="footer-social-icon footer-social-icon-fb fa-brands fa-facebook-square"></i>
-                        <i class="footer-social-icon fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="footer-social-fb">
+                        <img src="./img/item/logo-thecoffeehouse.jpg" alt="" class="footer-logo-cafe">
+                        <div class="footer-social-fb-des">
+                            <div class="footer-fb-name">
+                                The Coffee House 
+                                <i class="footer-fb-name-check fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="footer-fb-follow">613.363 lượt thích</div>
+                            
+                        </div>
+                    </div>
+                    <div class="footer-fell">
+                        <div class="footer-fell-like">
+                            <i class="ti-facebook"></i>
+                            Thích trang
+                        </div>
+                        <div class="footer-fell-share">
+                            <i class="fa-solid fa-share"></i>
+                            Thích trang
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
+
+    <script>
+        var nav = document.getElementById('nav-list-mobile');
+        var mobileMenu = document.getElementById('mobile-btn');
+        mobileMenu.onclick = function() {
+            var isClosed = nav.clientHeight === 60;
+            if (isClosed) {
+                nav.style.height = 'auto';
+            }
+            else {
+                nav.style.height = '60px';
+            }   
+        }
+    </script>
 </body>
 
 </html>
